@@ -1,6 +1,6 @@
 # modules/aurora/main.tf
 
-resource "aws_rds_cluster" "aurora1" {
+resource "aws_rds_cluster" "aurora" {
   cluster_identifier      = "aurora-cluster"
   engine                  = "aurora-mysql"
   master_username         = var.db_username
