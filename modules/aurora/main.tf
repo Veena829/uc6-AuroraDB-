@@ -1,6 +1,6 @@
 # modules/aurora/main.tf
 
-resource "aws_rds_cluster" "aurora" {
+resource "aws_rds_cluster" "aurora1" {
   cluster_identifier      = "aurora-cluster"
   engine                  = "aurora-mysql"
   master_username         = var.db_username
@@ -40,7 +40,7 @@ resource "aws_security_group" "aurora_sg" {
 }
 
 resource "aws_db_subnet_group" "aurora_subnet" {
-  name       = "aurora-subnet-group2"
+  name       = "aurora-subnet-group3"
   subnet_ids = var.subnet_ids
 }
 
