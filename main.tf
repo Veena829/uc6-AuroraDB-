@@ -12,7 +12,7 @@ module "aurora" {
 }
 
 resource "aws_secretsmanager_secret" "aurora_credentials" {
-  name = "aurora-db-credentials-v2"
+  name = "aurora-db-credentials-v3"
 }
 
 resource "aws_secretsmanager_secret_version" "aurora_credentials_version" {
