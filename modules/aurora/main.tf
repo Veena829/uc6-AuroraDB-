@@ -40,7 +40,7 @@ resource "aws_security_group" "aurora_sg" {
 }
 
 resource "aws_db_subnet_group" "aurora_subnet" {
-  name       = "aurora-subnet-group1"
+  name       = "aurora-subnet-group2"
   subnet_ids = var.subnet_ids
 }
 
